@@ -24,15 +24,15 @@ body {
   .header-title {
     font-size: 3em;
     font-weight: bold;
-    // display: inline-block;
 
     .love {
       display: inline-block;
+      a { color: inherit; }
       color: #f47771;
     }
-
     .rails {
       display: inline-block;
+      a { color: inherit; }
       color: #981a21;
     }
   }
