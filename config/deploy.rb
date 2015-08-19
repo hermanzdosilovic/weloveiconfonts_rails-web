@@ -10,6 +10,8 @@ set :branch, 'master'
 set :user, 'titus'
 set :forward_agent, true
 
+set :shared_paths, %{.env}
+
 task setup: :environment do
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/log"]
@@ -22,6 +24,7 @@ desc "Deploys the current version to the server."
 task deploy: :environment do
   deploy do
     invoke :'git:clone'
+    invoke :'deloy:link_shared_paths'
     invoke :'bundle:install'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
