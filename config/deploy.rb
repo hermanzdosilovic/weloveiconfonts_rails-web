@@ -10,7 +10,7 @@ set :branch, 'master'
 set :user, 'titus'
 set :forward_agent, true
 
-set :shared_paths, %{.env}
+set :shared_paths, %w{.env}
 
 task setup: :environment do
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/log"]
