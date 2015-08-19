@@ -4,6 +4,48 @@
  *= require_tree .
  */
 
+body {
+  width: 100%;
+  font-family: Lato, sans-serif;
+  font: 400 1.2em Lato, sans-serif;
+  color: #333333;
+  margin: 0px;
+}
+
+.header {
+  padding-top: 4em;
+  min-height: 9em;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  background: #eeeeee;
+  display: inline-block;
+
+  .header-title {
+    font-size: 3em;
+    font-weight: bold;
+    // display: inline-block;
+
+    .love {
+      display: inline-block;
+      color: #f47771;
+    }
+
+    .rails {
+      display: inline-block;
+      color: #981a21;
+    }
+  }
+
+  .header-subtitle {
+    margin-top: 30px;
+  }
+}
+
+.content {
+  margin: 5px;
+}
+
 .card-holder {
   display: inline-block;
   margin: 2px;
@@ -15,10 +57,11 @@
 
     width: 200px;
     height: 200px;
-    background: mix(white, gray, 80);
+    background: mix(white, gray, 95);
+    border-radius: 0%;
 
     .card-title {
-      font-size: 20px;
+      font-size: 18px;
     }
 
     .weloveiconfonts__item {
@@ -26,6 +69,4 @@
     }
   }
 }
-body {
-  width: 100%;
-}
+

@@ -1,3 +1,11 @@
+PATH
+  remote: /Users/herman/Workspace/weloveiconfonts_rails
+  specs:
+    weloveiconfonts_rails (1.0.1)
+      jquery-rails
+      rails
+      sass-rails
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -112,10 +120,6 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    weloveiconfonts_rails (1.0.1)
-      jquery-rails
-      rails
-      sass-rails
 
 PLATFORMS
   ruby
@@ -125,7 +129,7 @@ DEPENDENCIES
   rails (= 4.2.3)
   sass-rails (~> 5.0)
   slim-rails
-  weloveiconfonts_rails
+  weloveiconfonts_rails!
 
 BUNDLED WITH
    1.10.5
