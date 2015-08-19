@@ -24,7 +24,7 @@ desc "Deploys the current version to the server."
 task deploy: :environment do
   deploy do
     invoke :'git:clone'
-    invoke :'deloy:link_shared_paths'
+    invoke :'deploy:link_shared_paths'
     invoke :'bundle:install'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
